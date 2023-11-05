@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LogInComponent } from './components/log-in/log-in.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { HeaderComponent } from './components/header/header.component';
     FastfoodDetailComponent,
     HomeComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    LogInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,7 @@ import { HeaderComponent } from './components/header/header.component';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
