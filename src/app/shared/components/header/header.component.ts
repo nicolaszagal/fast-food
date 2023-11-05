@@ -19,6 +19,9 @@ export class HeaderComponent {
   fastFoodTable() {
     this.router.navigateByUrl('/table');
   }
-
+  fastFoodForm() {
+    this.router.navigateByUrl('/recetas');
+    console.log("fastFoodForm");
+  }
 
 }
