@@ -9,13 +9,13 @@ import { UserService } from '../../services/user/user.service';
 export class LogInComponent {
   email: string = '';
   password: string = '';
-  userType: boolean = false; // Agrega userType
+  userType: boolean = false;
   loginError: boolean = false;
 
   constructor(private authService: UserService) {}
 
   login(): void {
-    this.authService.login(this.email, this.password).subscribe(
+    this.authService.login(this.email, this.password, this.userType).subscribe(
         (user: any) => {
           if (user) {
             // Verifica que el tipo de usuario coincida

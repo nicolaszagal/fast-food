@@ -21,12 +21,13 @@
 
     <div class="form-group">
       <label>Tipo de Usuario:</label>
-      <div class="centered-container">
-        <mat-slide-toggle name="userType" [(ngModel)]="userType" [checked]="userType" color="warn">
-          {{ userType ? 'Chef' : 'Cliente' }}
-        </mat-slide-toggle>
-      </div>
+      <mat-slide-toggle name="userType" [(ngModel)]="userType" color="warn">
+        {{ userType ? 'Chef' : 'Cliente' }}
+      </mat-slide-toggle>
     </div>
+
+
+
     <div *ngIf="passwordMismatch" class="error-message">Las contraseñas no coinciden.</div>
     <button type="submit" class="btn btn-primary" [disabled]="signupForm.invalid">Registrarse</button>
     <div class="redirect">
