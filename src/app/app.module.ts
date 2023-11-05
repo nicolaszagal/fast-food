@@ -12,12 +12,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
-<<<<<<< Updated upstream
-=======
 import { LogInComponent } from './components/log-in/log-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { MatSlideToggleModule } from "@angular/material/slide-toggle";
->>>>>>> Stashed changes
 
 
 @NgModule({
@@ -27,7 +24,9 @@ import { MatSlideToggleModule } from "@angular/material/slide-toggle";
     FastfoodDetailComponent,
     HomeComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    LogInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
@@ -35,12 +34,8 @@ import { MatSlideToggleModule } from "@angular/material/slide-toggle";
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-<<<<<<< Updated upstream
-    RouterModule
-=======
     RouterModule,
-      MatSlideToggleModule
->>>>>>> Stashed changes
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
