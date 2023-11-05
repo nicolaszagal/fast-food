@@ -6,14 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FastfoodtableComponent } from './cocinero/components/fastfoodtable/fastfoodtable.component';
 import { FastfoodDetailComponent } from './cocinero/components/fastfood-detail/fastfood-detail.component';
-import { HomeComponent } from './cocinero/components/home/home.component';
+import { HomeComponent } from './cocinero/pages/home/home.component';
 import { MaterialModule } from '../shared/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './cocinero/components/footer/footer.component';
-import { HeaderComponent } from './cocinero/components/header/header.component';
-
-
+import { HeaderComponent } from './shared/components/header/header.component';
+import { CardComponent } from './cliente/components/card/card.component';
+import { RecetasComponent } from './cliente/pages/recetas/recetas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +21,9 @@ import { HeaderComponent } from './cocinero/components/header/header.component';
     FastfoodDetailComponent,
     HomeComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    CardComponent,
+    RecetasComponent
   ],
   imports: [
     BrowserModule,

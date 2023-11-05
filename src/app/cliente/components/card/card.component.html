@@ -1,0 +1,17 @@
+<mat-card class="small-card" >
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ bundle.title }}</mat-card-title>
+    <mat-card-subtitle>{{ bundle.title }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="bundle.image" alt="Photo of {{ bundle.title }}">
+  <mat-card-content>
+    <p>
+      {{ bundle.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button> LIKE </button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>

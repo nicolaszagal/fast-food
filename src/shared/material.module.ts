@@ -27,9 +27,9 @@ import { FormsModule } from '@angular/forms'
     MatFormFieldModule,
     MatInputModule,
     MatChipsModule,
-    FormsModule
+    FormsModule,
 
-    ,BrowserAnimationsModule,
+    BrowserAnimationsModule,
     MatSidenavModule
   ],
   exports: [
